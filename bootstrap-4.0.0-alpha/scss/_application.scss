@@ -1,0 +1,755 @@
+$darkblue:      #577f96;
+$middleblue:    #83a0b4;
+$lightblue:     #b2c1cd;
+$lightgrey:     #ededed;
+
+@font-face {
+  font-family: 'montserrat bold';
+  src: url('dist/fonts/Montserrat-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'montserrat regular';
+  src: url('dist/fonts/Montserrat-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'montserrat light';
+    src: url('dist/fonts/Montserrat-Light.otf') format('opentype');
+}
+
+
+
+body {
+    color: 	#5e5e5e;
+    letter-spacing: 0.05em;
+    font-family: 'montserrat light', sans-serif;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'monserrat bold', sans-serif;
+    }
+    font-size: 15px;
+    h1 {
+        font-size: 2.5rem;
+        color: $darkblue;
+    }
+    h2 {
+        font-size: 1.8rem;
+        color: $darkblue;
+    }
+    h3 {
+        font-size: 1.3rem;
+        color: $darkblue;
+    }
+    span.blue {
+        color: $darkblue
+    }
+    a {
+        color: $darkblue;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    
+}
+
+.ref {
+    border-bottom: 0.5rem solid #b2c1cd;
+    border-top: 0.5rem solid #b2c1cd;
+}
+.text-center {
+  padding-top: 20px;
+}
+
+.main {
+    float: right;
+}
+
+#sidebar {
+  height: 100%;
+  padding-right: 0;
+  padding-top: 7rem;
+  position: fixed;
+  width: 10%;
+  z-index: 1000;
+    .social {
+        list-style: none;
+        font-size: 1rem;
+        padding-left: 0;
+        li {
+            display: inline-flex;
+            a {
+                color: $middleblue;
+                font-weight: 700;
+                i
+                {
+                  display: inline-block;
+                  -moz-border-radius: 100px;
+                  -webkit-border-radius: 100px;
+                  border-radius: 100px;
+                  width: 2rem;
+                  color: #fff;
+                  padding: 0.5rem;
+                  background-color: $middleblue;
+                }
+                &:hover {
+                    color: $darkblue;
+                    text-decoration: none;
+                    i {
+                        background-color: $darkblue;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+.logo {
+    background: url(images/logo.png) 50% 50% no-repeat transparent;
+    width: 10rem;
+    height: 10rem;
+    background-size: 100%;
+}
+#sidebar .nav {
+  width: 95%;
+}
+#sidebar li {
+    padding-top: 1rem;
+    a {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        color: 	#5e5e5e;
+        &:hover {
+            color: $darkblue;
+            text-decoration: none;
+        }
+    }
+
+}
+
+#middlerow {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3rem;
+    h1 {
+        color: $darkblue;
+        text-align: center;
+        background: url(images/line.png) 50% 100% no-repeat transparent;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    p.lead {
+        font-family: 'montserrat regular', sans-serif;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    #coaching {
+        color: 	#5e5e5e;
+        h2 {
+            padding-left: 4rem;
+            background: url(images/coaching_icon.png) 0 0 no-repeat transparent;
+        }
+        .divide {
+            background: url(images/line_small.png) 20% 0 no-repeat transparent;
+            height: 1rem;
+        }
+        p {
+            padding-left: 4rem;
+            padding-right: 2rem;
+        }
+        &:hover {
+            h2 {
+                color: $middleblue;
+            }
+            p {
+                color: $middleblue
+            }
+        }
+    }
+    #kommunikation {
+        color: 	#5e5e5e;
+        h2 {
+            padding-left: 4rem;
+            background: url(images/kommunikation_icon.png) 0 0 no-repeat transparent;
+        }
+        .divide {
+            background: url(images/line_small.png) 20% 0 no-repeat transparent;
+            height: 1rem;
+        }
+        p {
+            padding-left: 4rem;
+            padding-right: 1rem;
+        }
+        &:hover {
+            h2 {
+                color: $middleblue;
+            }
+            p {
+                color: $middleblue
+            }
+        }
+    }
+}
+
+#bottomrow {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-color: $lightgrey;
+    h1 {
+        color: $darkblue;
+        text-align: center;
+        background: url(images/line.png) 50% 100% no-repeat transparent;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    p.lead {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .divide {
+        height: 3rem;
+        background: url(images/line_small.png) 0 50% no-repeat transparent;
+    }
+    a {
+        color: 	#5e5e5e;
+        .box-header {
+            width: 100%;
+            height: 15rem;
+            margin-bottom: 2rem;
+        }
+        .werkself {
+            background: url(images/werkself.png) 50% 50% no-repeat transparent;
+        }
+        .netzwerk {
+             background: url(images/netzwerk.png) 50% 50% no-repeat transparent;
+        }
+        .werkschau {
+            background: url(images/werkschau.png) 50% 50% no-repeat transparent;
+        }
+    }
+    a:hover {
+        color: $darkblue;
+        .werkself { opacity: .8 }
+        .netzwerk { opacity: .8 }
+        .werkschau { opacity: .8 }
+    }
+}
+
+.ref {
+
+}
+.kontakt {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    a {
+        color: 	#5e5e5e;
+        &:hover {
+            color: $darkblue;
+            text-decoration: none;
+        }
+    }
+    .top {
+        color: $darkblue;
+        line-height: 1.8rem;
+    }
+}
+
+#coaching {
+    #one { color: $darkblue; font-family: 'montserrat regular', sans-serif;}
+}
+#aktuelles {
+    #one { color: $darkblue; font-family: 'montserrat regular', sans-serif;}
+}
+#kontakt {
+    #seven { color: $darkblue; font-family: 'montserrat regular', sans-serif;}
+}
+#partner {
+    #four { color: $darkblue; font-family: 'montserrat regular', sans-serif;}
+}
+#referenzen {
+    #six { color: $darkblue; font-family: 'montserrat regular', sans-serif;}
+}
+#kommunikation {
+    #two { color: $darkblue; font-family: 'montserrat regular', sans-serif;}
+}
+#team {
+    #three { color: $darkblue; font-family: 'montserrat regular', sans-serif;}
+    
+    .main-page {
+        .entry {
+            .coach-header:hover {text-decoration: none;}
+            .coach-header {
+                background-size: 100%;
+                height: 15rem;
+                width: 100%;            
+            }
+            h3 {
+                margin-top: 1rem;
+            }
+            p {
+                margin-top: 1rem;
+                color: 	#5e5e5e;
+                opacity: 0.8;
+                font-family: 'montserrat light', sans-serif;
+            }
+            p:hover {
+                text-decoration: none;
+                color: $middleblue;
+            }
+
+            
+            #coach1 {
+                .coach-header {
+                    background: url(images/lachen/stefan.jpg) 50% 50% no-repeat transparent;  
+                    background-size: 100%;
+                }
+                &:hover {
+                .coach-header {
+                    background: url(images/gestik/stefan.JPG) 50% 50% no-repeat transparent;  
+                    background-size: 100%;  
+                }
+                }
+            }
+            #coach2 {
+                .coach-header {
+                    background: url(images/lachen/dagmar.jpg) 50% 50% no-repeat transparent; 
+                    background-size: 100%;
+                } 
+                &:hover {
+                    .coach-header {
+                        background: url(images/gestik/dagmar.jpg) 50% 50% no-repeat transparent;  
+                        background-size: 100%;              
+                    }
+                }
+            }
+            #coach3 {
+                .coach-header {
+                    background: url(images/lachen/jochen.jpg) 50% 50% no-repeat transparent;  
+                    background-size: 100%;
+                }
+                &:hover {
+                    .coach-header {
+                        background: url(images/gestik/jochen.JPG) 50% 50% no-repeat transparent;  
+                        background-size: 100%;              
+                    }
+                }
+            }
+            #coach4 {
+                .coach-header {
+                    background: url(images/lachen/cs.JPG) 50% 50% no-repeat transparent;  
+                    background-size: 100%;
+                }
+                &:hover {
+                .coach-header {
+                    background: url(images/gestik/cs.JPG) 50% 50% no-repeat transparent;  
+                    background-size: 100%;              
+                }
+                }
+            }
+            #coach5 {
+                .coach-header {
+                    background: url(images/lachen/lena.jpg) 50% 50% no-repeat transparent; 
+                    background-size: 100%;
+                } 
+                &:hover {
+                    .coach-header {
+                        background: url(images/gestik/lena.JPG) 50% 50% no-repeat transparent;  
+                        background-size: 100%;              
+                    }
+                }
+            }
+            #coach6 {
+                .coach-header {
+                    background: url(images/lachen/bs.jpg) 50% 50% no-repeat transparent;  
+                    background-size: 100%;
+                }
+                &:hover {
+                    .coach-header {
+                        background: url(images/gestik/bs.jpg) 50% 50% no-repeat transparent;  
+                        background-size: 100%;              
+                    }
+                }
+            }
+            #coach7 {
+                .coach-header {
+                    background: url(images/lachen/sandra.jpg) 50% 50% no-repeat transparent;  
+                    background-size: 100%;
+                }
+                &:hover {
+                .coach-header {
+                    background: url(images/gestik/sandra.jpg) 50% 50% no-repeat transparent;  
+                    background-size: 100%;              
+                }
+                }
+            }
+            #coach8 {
+                .coach-header {
+                    background: url(images/lachen/cm.jpg) 50% 50% no-repeat transparent; 
+                    background-size: 100%;
+                } 
+                &:hover {
+                    .coach-header {
+                        background: url(images/gestik/cm.jpg) 50% 50% no-repeat transparent;  
+                        background-size: 100%;              
+                    }
+                }
+            }
+            #coach9 {
+                .coach-header {
+                    background: url(images/lachen/uo.jpg) 50% 50% no-repeat transparent;  
+                    background-size: 100%;
+                }
+                &:hover {
+                    .coach-header {
+                        background: url(images/gestik/uo.JPG) 50% 50% no-repeat transparent;  
+                        background-size: 100%;              
+                    }
+                }
+            }
+        }
+            #coach10 {
+                .coach-header {
+                    background: url(images/lachen/susi.jpg) 50% 50% no-repeat transparent;  
+                    background-size: 100%;
+                }
+                &:hover {
+                .coach-header {
+                    background: url(images/gestik/susi.jpg) 50% 50% no-repeat transparent;  
+                    background-size: 100%;              
+                }
+                }
+            }
+            #coach11 {
+                .coach-header {
+                    background: url(images/lachen/paul.jpg) 50% 50% no-repeat transparent; 
+                    background-size: 100%;
+                } 
+                &:hover {
+                    .coach-header {
+                        background: url(images/gestik/paul.jpg) 50% 50% no-repeat transparent;  
+                        background-size: 100%;              
+                    }
+                }
+            }
+            #coach12 {
+                .coach-header {
+                    background: url(images/lachen/sabine.jpg) 50% 50% no-repeat transparent;  
+                    background-size: 100%;
+                }
+                &:hover {
+                    .coach-header {
+                        background: url(images/gestik/sabine.jpg) 50% 50% no-repeat transparent;  
+                        background-size: 100%;              
+                    }
+                }
+            }
+    }
+}
+
+.logo-img {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 9rem;
+}
+.main-page {
+    padding-top: 3rem;
+    float: right;
+    h1 {
+        color: $darkblue;
+        border-bottom: 0.5rem solid $middleblue;
+        text-transform: uppercase;
+    }
+    h2 {
+        color: $darkblue;
+        background: url(images/line.png) 0 100% no-repeat transparent;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+    h3 {
+        color: 	#5e5e5e;
+        
+    }
+    pre {
+   font-family: "montserrat light",sans-serif;
+    font-size: 1.4rem;
+        white-space: pre-wrap;
+        color: #5e5e5e;
+    }
+    blockquote {
+        padding-left: 2rem;
+        border-left: 0.5rem solid $lightgrey;
+    }
+    .entry {
+     ul {
+        list-style: none;
+        li::before {
+            content: ".";
+            color: $darkblue;
+             padding-right: 0.5rem;
+            font-family: 'montserrat regular', sans-serif;
+        }        
+    }       
+    }
+
+    img.alignleft {
+        float: left;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    img.alignright {
+        float: right;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+     .headerpic {
+        background: url(images/headerbild.jpg) 0 0 no-repeat transparent;
+        background-size: 100%;
+        height: 20rem;
+        width: 100%;
+        margin-top: -0.5rem;
+    } 
+}
+
+.main-page .entry a img.attachment-post-thumbnail.wp-post-image
+{
+
+    height: 0;
+
+}
+#coaching {
+    .headerpic {
+          background: url(images/Headerbild_coaching.jpg) 0 0 no-repeat transparent; 
+          opacity: .7;
+          background-size: 100%;
+    }
+}
+
+#team {
+    .headerpic {
+          background: url(images/Headerbild_team.jpg) 0 0 no-repeat transparent; 
+          opacity: .7;
+          background-size: 100%;
+    }
+}
+
+#aktuelles {
+    .headerpic {
+          background: url(images/Headerbild_aktuelles.jpg) 0 0 no-repeat transparent; 
+          opacity: .7;
+          background-size: 100%;
+    }
+}
+#partner {
+    .headerpic {
+          background: url(images/Headerbild_partner.jpg) 0 0 no-repeat transparent; 
+          opacity: .7;
+          background-size: 100%;
+    }
+}
+#referenzen {
+    .headerpic {
+          background: url(images/Headerbild_referenzen.jpg) 0 0 no-repeat transparent; 
+          opacity: .7;
+          background-size: 100%;
+    }
+}
+#kommunikation {
+    .headerpic {
+          background: url(images/Headerbild_strat.kom.jpg) 0 0 no-repeat transparent; 
+          opacity: .7;
+          background-size: 100%;
+    }
+}
+#impressum {
+    .headerpic {
+          background: url(images/Headerbild_Impressum.jpg) 0 0 no-repeat transparent; 
+          opacity: .7;
+          background-size: 100%;
+    }
+}
+#kontakt {
+    .headerpic {
+          background: url(images/Headerbild_Kontakt.jpg) 0 0 no-repeat transparent; 
+          opacity: .7;
+          background-size: 100%;
+    }
+}
+.jumbotron {
+    padding-top: 3rem;
+    background-color: $lightgrey;
+    padding: 0;
+    border-radius: 0;
+    h1 {
+        color: $darkblue;
+        text-align: center;
+        background: url(images/line.png) 50% 100% no-repeat transparent;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+    p.lead {
+        font-family: 'montserrat regular', sans-serif;
+        text-align: center;
+    }
+    #galerie-placeholder {
+        width: 100%;
+        height: 20rem;
+        background: url(images/galerie-placeholder.png) 50% 50% no-repeat transparent;
+        background-size: 100%;
+    }
+}
+
+@media(min-width: 982px) {
+        .main-page {
+    .headerpic {
+        background: url(images/headerbild.jpg) 0 0 no-repeat transparent;
+        background-size: 100%;
+        height: 20rem;
+        width: 100%;
+        margin-top: -0.5rem;
+    }
+    }
+
+}
+/* collapsed sidebar styles */
+@media(max-width:767px){
+
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+      #sidebar {
+          padding-left: 10rem;
+      }
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    padding-top:0;
+  }
+    .logo {
+        width: 7rem;
+        height: 7rem;
+    }
+    .jumbotron {
+        #galerie-placeholder {
+            height: 12rem;
+            background-size: 100%;
+        }
+    }
+
+    .main-page {
+    .headerpic {
+        background: url(images/headerbild.jpg) 0 0 no-repeat transparent;
+        background-size: 100%;
+        height: 12rem;
+        width: 100%;
+        margin-top: -0.5rem;
+    }
+    .coach-header {
+    background-size: 100% auto;
+    height: 10rem;
+    width: 10rem;
+}
+    }
+
+}
+@media(max-width: 980px){
+    .main-page {
+    .headerpic {
+        background: url(images/headerbild.jpg) 0 0 no-repeat transparent;
+        background-size: 100%;
+        height: 13rem;
+        width: 100%;
+        margin-top: -0.5rem;
+    }
+        .entry {
+     .coach-header {
+    background-size: 100% auto;
+    height: 10rem;
+    width: 10rem;
+}           
+        }
+
+    }    
+} 
+
+@media(max-width: 380px) {
+    body {
+            h1 {
+        font-size: 2rem;
+        color: $darkblue;
+    }
+    h2 {
+        font-size: 1.3rem;
+        color: $darkblue;
+    }
+    h3 {
+        font-size: 1rem;
+        color: $darkblue;
+    }
+    }
+.navbar-fixed-top, .navbar-fixed-bottom {
+        background-color: $darkblue;
+        color: #fff;
+    }
+    .main-page {
+    .headerpic {
+        background: url(images/headerbild.jpg) 0 0 no-repeat transparent;
+        background-size: 100%;
+        height: 10rem;
+        width: 100%;
+        margin-top: -0.5rem;
+    }
+    .coach-header {
+    background-size: 100% auto;
+    height: 10rem;
+    width: 10rem;
+}
+    }
+
+    
+}
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    border-top: 0.1rem solid $lightgrey;
+    ul {
+        padding-left: 0;
+        li {
+            display: inline-flex;
+            a {
+                color: 	#5e5e5e;
+                &:hover {
+                    color: $darkblue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
